@@ -7,7 +7,7 @@ import createVotesCollection from "./vote.collection";
 
 import { databases } from "./config";
 
-export default async function getorCreteDB() {
+export default async function getOrCreteDB() {
   try {
     await databases.get(db);
     console.log("Database already exists");
